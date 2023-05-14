@@ -1,8 +1,6 @@
 ---
 title: Waydroid android Certified
 ---
-# Personnal bouleetbil website
-
 ## Waydroid affiche appareil non certifié :
 
 Recupérer l'id Android
