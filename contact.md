@@ -1,4 +1,4 @@
 ---
 title: Contact
 ---
-Pour me contacter : [bouleetbil@gmail.com](mailto:bouleetbil@gmail.com)
+Pour me contacter : [bouleetbil](mailto:bouleetbil@gmail.com)
