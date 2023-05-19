@@ -32,7 +32,8 @@ Création du répertoire de travail :
 
 Sauvegarde des partitions :
 
-```yggdrasil:/ $ su
+```
+yggdrasil:/ $ su
 
 yggdrasil:/ # dd if=/dev/block/mmcblk0boot0 of=~/sdcard/dump_android/preloader_a.img
 
@@ -84,7 +85,8 @@ $ mkdir /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/andro
 
 $ touch /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/android/updater-script
 
-$ wget https://debian-facile.org/images/file-R25ac9925cdd9fe07763413ca6210a1c2 -O /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/android/update-binary```
+$ wget https://debian-facile.org/images/file-R25ac9925cdd9fe07763413ca6210a1c2 -O /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/android/update-binary
+```
 
 Editer /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/android/updater-script
 
@@ -129,20 +131,25 @@ delete_recursive("/cache/dalvik-cache/");
 
 delete_recursive("/cache");
 
-ui_print("Done!");```
+ui_print("Done!");
+```
 
 ## Création du zip
 
-```$ cd /home/$USER/Documents/BackupVolla/dump_android/dump_android
+```
+$ cd /home/$USER/Documents/BackupVolla/dump_android/dump_android
 
-$ zip -r9 /home/$USER/dump_android.zip *```
+$ zip -r9 /home/$USER/dump_android.zip *
+```
 
 ## Signature
 
-`$ wget https://debian-facile.org/images/file-Rb3866f5849cc53ea3c0468a27a5dd51f -O SignApk.zip`
+```
+$ wget https://debian-facile.org/images/file-Rb3866f5849cc53ea3c0468a27a5dd51f -O SignApk.zip
 
-```$ cd SignApk
+$ cd SignApk
 
 $ sudo apt-get install apksigner
 
-$ apksigner sign --cert testkey.x509.pem --key testkey.pk8 --min-sdk-version 15 --verbose ~/dump_android.zip ```
+$ apksigner sign --cert testkey.x509.pem --key testkey.pk8 --min-sdk-version 15 --verbose ~/dump_android.zip 
+```
