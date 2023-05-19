@@ -7,9 +7,10 @@ Prérequis
 - outils adb/fastboot
 
 ### Backup des données
-`$ mkdir Documents/BackupVolla
 
-$ adb backup -apk -shared -all -f /home/$USER/Documents/BackupVolla/backup_android.ab`
+`$ mkdir Documents/BackupVolla`
+
+`$ adb backup -apk -shared -all -f /home/$USER/Documents/BackupVolla/backup_android.ab`
 
 indiquer un mot de passe sur le vollaphone
 
