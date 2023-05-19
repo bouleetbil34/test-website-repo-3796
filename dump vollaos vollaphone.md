@@ -2,6 +2,7 @@
 title: Dump VollaOS vollaphone
 ---
 ## Dump android installation
+
 Prérequis 
 - Android rooté
 - outils adb/fastboot
@@ -84,25 +85,43 @@ Obtenir la liste des partitions
 Editer /home/$USER/Documents/BackupVolla/dump_android/META-INF/com/google/android/updater-script
 
 `package_extract_file("preloader_a.img", "/dev/block/mmcblk0boot0");
+
 package_extract_file("preloader_b.img", "/dev/block/mmcblk0boot1");
+
 package_extract_file("recovery.img", "/dev/block/mmcblk0p3");
+
 package_extract_file("boot.img", "/dev/block/mmcblk0p25");
+
 package_extract_file("dtbo.img", "/dev/block/mmcblk0p27r");
+
 package_extract_file("logo.img", "/dev/block/mmcblk0p26");
+
 package_extract_file("md1sp.img", "/dev/block/mmcblk0p16");
+
 package_extract_file("md1img.img", "/dev/block/mmcblk0p15");
+
 package_extract_file("spmfw.img", "/dev/block/mmcblk0p17");
+
 package_extract_file("lk2.img", "/dev/block/mmcblk0p24");
+
 package_extract_file("sspm_2.img", "/dev/block/mmcblk0p19");
+
 package_extract_file("tee2.img", "/dev/block/mmcblk0p29");
+
 package_extract_file("lk.img", "/dev/block/mmcblk0p23");
+
 package_extract_file("sspm_1.img", "/dev/block/mmcblk0p18");
+
 package_extract_file("tee1.img", "/dev/block/mmcblk0p28");
+
 package_extract_file("system.img", "/dev/block/mmcblk0p31");
+
 package_extract_file("vendor.img", "/dev/block/mmcblk0p30");
 
 delete_recursive("/data/dalvik-cache/");
+
 delete_recursive("/cache/dalvik-cache/");
+
 delete_recursive("/cache");
 
 ui_print("Done!");`
