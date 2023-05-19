@@ -6,16 +6,21 @@ Prérequis
 - Android rooté
 - outils adb/fastboot
 
-## Backup des données
+### Backup des données
 `$ mkdir Documents/BackupVolla
+
 $ adb backup -apk -shared -all -f /home/$USER/Documents/BackupVolla/backup_android.ab`
+
 indiquer un mot de passe sur le vollaphone
-Pour restaurer les données 
+
+### Pour restaurer les données 
 `$ adb restore /home/$USER/Documents/BackupVolla/backup_android.ab`
 
 ## Backup des partitions root needed
+
 `$ adb shell`
 Obtenir la liste des partitions
+
 `yggdrasil:/ $ ls -al /dev/block/platform/bootdevice/by-name/
 yggdrasil:/ $ mkdir /sdcard/dump_android
 yggdrasil:/ $ su
